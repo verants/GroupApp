@@ -24,7 +24,6 @@ class LoginViewController: UIViewController {
     
     // MARK: - Private properties
     private let user = User.getUserData()
-//    let targetImage = CGSize(width: 30, height: 30)
     
     let primaryColor = UIColor(
         red: 58/255,
@@ -47,23 +46,21 @@ class LoginViewController: UIViewController {
         loginIconImage.image = UIImage(named: user.loginIcon)
         passwordIconImage.image = UIImage(named: user.passwordIcon)
         
+        loginIconImage.contentMode = .scaleAspectFit
+        passwordIconImage.contentMode = .scaleAspectFit
+        
+//        loginIconImage.image = CGSize(width: 30, height: 30)
+//        passwordIconImage.image = CGSize(width: 30, height: 30)
+//
+//        loginIconImage.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+//        passwordIconImage.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        
         loginButton.layer.cornerRadius = 10
     }
     
-//    override func viewWillLayoutSubviews() {
-//        loginIconImage.
-//    }
-    
     // MARK: - IBAction
-    @IBAction func showPasswordSwitch(_ sender: UISwitch) {
-        
-        let switchStatus = sender.isOn
-        if switchStatus {
-            passwordTF.isSecureTextEntry = true
-        } else {
-            passwordTF.isSecureTextEntry = false
-        }
-        
+    @IBAction func showPasswordSwitch() {
+        passwordTF.isSecureTextEntry.toggle()
     }
     
     @IBAction func loginInButton() {
