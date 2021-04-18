@@ -13,6 +13,10 @@
 		3B5F3DE22629ED1600B71867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5F3DE02629ED1600B71867 /* Main.storyboard */; };
 		3B5F3DE42629ED1700B71867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5F3DE32629ED1700B71867 /* Assets.xcassets */; };
 		3B5F3DE72629ED1700B71867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5F3DE52629ED1700B71867 /* LaunchScreen.storyboard */; };
+		B3E073D6262C655800E28467 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E073D5262C655800E28467 /* SettingsTableViewController.swift */; };
+		B3E073DB262C6AC000E28467 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E073DA262C6AC000E28467 /* Setting.swift */; };
+		B3E073DE262C6B1A00E28467 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E073DD262C6B1A00E28467 /* SettingsManager.swift */; };
+		B3E073E2262C6EE000E28467 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E073E1262C6EE000E28467 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3B5F3DE32629ED1700B71867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B5F3DE62629ED1700B71867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B5F3DE82629ED1700B71867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E073D5262C655800E28467 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		B3E073DA262C6AC000E28467 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		B3E073DD262C6B1A00E28467 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		B3E073E1262C6EE000E28467 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		3B5F3DD92629ED1600B71867 /* GroupApp */ = {
 			isa = PBXGroup;
 			children = (
+				B3E073D9262C6AAE00E28467 /* DataManagers */,
+				B3E073D8262C6AA600E28467 /* Models */,
 				3B5F3DF32629ED6500B71867 /* Supporting */,
 				3B5F3DF02629ED4400B71867 /* ViewControllers */,
 				3B5F3DEF2629ED3400B71867 /* Views */,
@@ -77,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				3B5F3DDE2629ED1600B71867 /* ViewController.swift */,
+				B3E073D5262C655800E28467 /* SettingsTableViewController.swift */,
+				B3E073E1262C6EE000E28467 /* TabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -97,6 +109,22 @@
 				3B5F3DE82629ED1700B71867 /* Info.plist */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		B3E073D8262C6AA600E28467 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3E073DA262C6AC000E28467 /* Setting.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3E073D9262C6AAE00E28467 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				B3E073DD262C6B1A00E28467 /* SettingsManager.swift */,
+			);
+			path = DataManagers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E073DB262C6AC000E28467 /* Setting.swift in Sources */,
+				B3E073D6262C655800E28467 /* SettingsTableViewController.swift in Sources */,
+				B3E073DE262C6B1A00E28467 /* SettingsManager.swift in Sources */,
 				3B5F3DDF2629ED1600B71867 /* ViewController.swift in Sources */,
+				B3E073E2262C6EE000E28467 /* TabBarController.swift in Sources */,
 				3B5F3DDB2629ED1600B71867 /* AppDelegate.swift in Sources */,
 				3B5F3DDD2629ED1600B71867 /* SceneDelegate.swift in Sources */,
 			);
