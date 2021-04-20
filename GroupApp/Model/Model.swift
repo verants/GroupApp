@@ -23,3 +23,8 @@ struct User {
     }
     
 }
+
+enum Contacts: String {
+    case login = "person" //
+    case password = "tray" //tray
+}
