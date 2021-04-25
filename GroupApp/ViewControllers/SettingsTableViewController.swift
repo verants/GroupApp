@@ -29,8 +29,7 @@ class SettingsTableViewController: UITableViewController {
         
         var content = cell.defaultContentConfiguration()
         
-        let icon = UIImage(systemName: setting.icon)
-        content.image = icon
+        content.image = UIImage(systemName: setting.icon)
         content.imageProperties.tintColor = .black
         content.imageProperties.maximumSize = CGSize(width: 28, height: 28)
         
