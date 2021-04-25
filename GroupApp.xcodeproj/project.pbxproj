@@ -68,19 +68,19 @@
 				B3E073D8262C6AA600E28467 /* Models */,
 				3B5F3DF32629ED6500B71867 /* Supporting */,
 				3B5F3DF02629ED4400B71867 /* ViewControllers */,
-				3B5F3DEF2629ED3400B71867 /* Views */,
+				3B5F3DEF2629ED3400B71867 /* Storyboards */,
 				3B5F3DF22629ED5600B71867 /* Resources */,
 			);
 			path = GroupApp;
 			sourceTree = "<group>";
 		};
-		3B5F3DEF2629ED3400B71867 /* Views */ = {
+		3B5F3DEF2629ED3400B71867 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				3B5F3DE02629ED1600B71867 /* Main.storyboard */,
 				3B5F3DE52629ED1700B71867 /* LaunchScreen.storyboard */,
 			);
-			path = Views;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		3B5F3DF02629ED4400B71867 /* ViewControllers */ = {
